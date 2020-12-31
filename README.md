@@ -1,34 +1,5 @@
-# takbatr-2021
+# Takbatr 2021
 
-## Project setup
-```
-npm install
-```
+ทำบุญออนไลน์กันเถอะ
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+[https://takbatr-2021.web.app/](https://takbatr-2021.web.app/)
