@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <h1 class="title-header">ตักบาตรออนไลน์</h1>
-    <div v-if="canBinthbat" class="text-left">
+    <div v-if="!canBinthbat" class="text-left">
       <div class="container mb-2">
         <label for="name">ชื่อ</label>
         <b-form-input id="name" v-model="data.name" :disabled="isAnonymous" />
@@ -45,7 +45,7 @@
     </div>
 
     <div v-else class="container">
-      <h2>ไม่ได้อยู่ในช่วงที่พระรับบิณบาตร</h2>
+      <h2>ไม่ได้อยู่ในช่วงที่พระรับบิณฑบาต</h2>
       <h3>ไว้มาใหม่ด้วยใจศรัทธาในช่วงตี 5 ถึง 9 โมงเช้านะ</h3>
     </div>
   </div>
@@ -109,7 +109,7 @@ export default {
           .then((result) => {
             console.log(result);
             this.$bvModal.msgBoxOk(
-              "ตักบาตรเรียบร้อยแล้ว จงอุทิศแพร่เมตตาให้กับสรรพสัตว์ทั้งหลายด้วยจิตเมตตา เทอญฯ",
+              "ตักบาตรเรียบร้อยแล้ว จงอุทิศแผ่เมตตาให้กับสรรพสัตว์ทั้งหลายด้วยจิตเมตตา เทอญฯ",
               {
                 title: "ตักบาตรเรียบร้อย",
                 size: "md",
@@ -158,7 +158,7 @@ export default {
     if (datetime.getHours() >= 5 && datetime.getHours() < 9) {
       this.canBinthbat = true;
     } else {
-      // alert("ไม่ได้อยู่ในช่วงที่พระรับบิณบาตร");
+      // alert("ไม่ได้อยู่ในช่วงที่พระรับบิณฑบาต");
     }
 
     this.readWishesFromDB();
